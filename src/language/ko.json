@@ -1,0 +1,21 @@
+{
+    "word": {
+        "home" : "홈",
+        "experiment" : "실험",
+        "dashboard": "대시보드",
+        "settings": "설정",
+        "logout": "로그아웃",
+        "login": "로그인",
+        "language": "언어",
+        "notebook": "연구노트",
+        "analytics": "데이터 분석",
+        "reports": "보고서",
+        "profile": "프로필 설정",
+        "security": "보안 설정"
+    },
+    "message": {
+        "new_message": "새로운 메시지가 있습니다.",
+        "clear_all": "모두 삭제"
+    }
+}
+  

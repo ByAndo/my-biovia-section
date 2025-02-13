@@ -1,0 +1,21 @@
+{
+    "word": {
+      "home": "ホーム",
+      "experiment": "実験",
+      "dashboard": "ダッシュボード",
+      "settings": "設定",
+      "logout": "ログアウト",
+      "login": "ログイン",
+      "language": "言語",
+      "notebook": "研究ノート",
+      "analytics": "データ分析",
+      "reports": "レポート",
+      "profile": "プロフィール設定",
+      "security": "セキュリティ設定"
+    },
+    "message": {
+      "new_message": "新しいメッセージがあります。",
+      "clear_all": "すべて削除"
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "word": {
+      "home": "Home",
+      "experiment": "Experiment",
+      "dashboard": "Dashboard",
+      "settings": "Settings",
+      "logout": "Logout",
+      "login": "Login",
+      "language": "Language",
+      "notebook": "Notebook",
+      "analytics": "Data Analysis",
+      "reports": "Reports",
+      "profile": "Profile Settings",
+      "security": "Security Settings"
+    },
+    "message": {
+      "new_message": "You have a new message.",
+      "clear_all": "Clear All"
+    }
+  }
+  
