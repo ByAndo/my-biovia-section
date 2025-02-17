@@ -68,8 +68,8 @@ const SidebarContent = ({ moduleKey }: SidebarContentProps) => {
     style={{ width: isCollapsed ? "0px" : `${width}px` }}
     >
     {!isCollapsed && (
-        <div className="bg-[var(--color-sidebar_sub)] text-[var(--color-text)] shadow-md flex-1 p-3">
-            <div className="bg-[var(--color-header)] text-[var(--color-text)] p-1 flex items-center">
+        <div className="bg-[var(--color-second)] text-[var(--color-font)] shadow-md flex-1 p-3">
+            <div className="text-[var(--color-active)] p-1 flex items-center">
                 {moduleIcons[moduleKey]}
                 <h2 className="text-sm font-medium tracking-wide uppercase text-[var(--color-accent)]">
                     {getTranslation(language,'word', moduleKey)}                    
@@ -79,7 +79,7 @@ const SidebarContent = ({ moduleKey }: SidebarContentProps) => {
             {moduleKey === "notebook"
             ? notebookRoutes.map((route) => (
                 <li key={route.path}>
-                    <Link to={route.path} className="block p-2 hover:bg-[var(--color-dropdown-hover)] rounded">
+                    <Link to={route.path} className="block p-2 hover:bg-[var(--color-prime-hover)] rounded">
                         {getTranslation(language,'word', route.code)}                    
                     </Link>
                 </li>
@@ -87,24 +87,24 @@ const SidebarContent = ({ moduleKey }: SidebarContentProps) => {
             : moduleKey === "dashboard"
             ? [
                 <li key="analytics">
-                    <Link to="/dashboard/analytics" className="block p-2 hover:bg-[var(--color-dropdown-hover)] rounded">
+                    <Link to="/dashboard/analytics" className="block p-2 hover:bg-[var(--color-prime-hover)] rounded">
                         {getTranslation(language,'word', 'analytics')}
                     </Link>
                 </li>,
                 <li key="reports">
-                    <Link to="/dashboard/reports" className="block p-2 hover:bg-[var(--color-dropdown-hover)] rounded">
+                    <Link to="/dashboard/reports" className="block p-2 hover:bg-[var(--color-prime-hover)] rounded">
                         {getTranslation(language,'word', 'reports')}  
                     </Link>
                 </li>,
                 ]
             : [
                 <li key="profile">
-                    <Link to="/settings/profile" className="block p-2 hover:bg-[var(--color-dropdown-hover)] rounded">
+                    <Link to="/settings/profile" className="block p-2 hover:bg-[var(--color-prime-hover)] rounded">
                         {getTranslation(language,'word', 'profile')}
                     </Link>
                 </li>,
                 <li key="security">
-                    <Link to="/settings/security" className="block p-2 hover:bg-[var(--color-dropdown-hover)] rounded">
+                    <Link to="/settings/security" className="block p-2 hover:bg-[var(--color-prime-hover)] rounded">
                         {getTranslation(language,'word', 'security')}
                     </Link>
                 </li>,

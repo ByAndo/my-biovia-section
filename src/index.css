@@ -1,50 +1,61 @@
+/* index.css 수정 */
 @import "tailwindcss";
-/* Tailwind 기본 스타일 제거됨 → 직접 스타일 지정 가능 */
+
 :root {
-    --color-background: #F9FAFB;
-    --color-text: #111827;
-    --color-header: #F3F4F6;    
-    --color-footer: #ffa500;
-    --color-footer-text : #111827; 
-    --color-sidebar: #F3F4F6;
-    --color-sidebar_sub: #dcdddf; /* 사이드바_sub 배경 */
-    --color-dropdown: #F3F4F6;
-    --color-dropdown-bg: #FFFFFF;
-    --color-dropdown-hover: #E5E7EB;
-    --color-button: #E5E7EB;
-    --color-accent: #2563EB; /* 기본 파란색 강조 */
-    --color-notification-icon: #374151; /* text-gray-700 */
-    --color-notification-badge: #ef4444; /* bg-red-500 */
-    --color-avatar-bg: #d1d5db; /* bg-gray-300 */
-    --color-lang-bg: #2f2f30; 
-  }
-  
-  /* VSCode Dark Mode 스타일 */
-  .dark {
-    --color-background: #1E1E1E; /* VSCode 배경 */
-    --color-text: #D4D4D4; /* 연한 회색 텍스트 */
-    --color-header: #2f2f30; /* VSCode 헤더 */
-    --color-footer: #ff7a00;
-    --color-footer-text : white; 
-    --color-sidebar: #2f2f30; /* 사이드바 배경 */
-    --color-sidebar_sub: #252526; /* 사이드바_sub 배경 */
-    --color-dropdown: #333333;
-    --color-dropdown-bg: #2f2f30;
-    --color-dropdown-hover: #3C3C3C;
-    --color-button: #3C3C3C;
-    --color-accent: #007ACC; /* VSCode 블루 강조 */
-    --color-notification-icon: #d1d5db; /* text-gray-300 */
-    --color-notification-badge: #f87171; /* bg-red-400 */
-    --color-avatar-bg: #8ba4c7; /* bg-gray-600 */
-    --color-lang-bg: #d1d5db; 
-  }
-  
-  /* Tailwind에서 변수를 활용할 수 있도록 */
-  body {
-    background-color: var(--color-background);
-    color: var(--color-text);
-  }
-  
+    --color-background: #F9FAFB; /* 전체 배경 */
+    --color-font: #111827; /* 기본 텍스트 */
+
+    --color-prime: #F9FAFB; /* 기본 색상 (버튼, 카드 배경) */
+    --color-prime-hover: #D6D6DA; /* Hover 시 강조되는 밝은 회색 */
+
+    --color-second: #e3e4e6; /* 보조 색상 (VS Code의 파란 계열) */
+    --color-second-hover: #bebebe; /* Hover 시 더 강조된 보라 계열 */
+
+    --color-third: #EF4444; /* 강렬한 포인트 색상 (에러, 경고) */
+    --color-third-hover: #DC2626; /* Hover 시 더 강조된 레드 */
+
+    --color-active: #bebebe; /* 클릭된 상태에서 강조될 색상 */ 
+}
+
+.dark {
+    --color-background: #1E1E1E; /* VS Code 기본 다크 배경 */
+    --color-font: #D4D4D4; /* VS Code 스타일 밝은 텍스트 */
+    
+    --color-prime: #2C2C2C; /* 다크 모드 기본 배경 */
+    --color-prime-hover: #3C3C3C; /* Hover 시 강조된 진한 그레이 */
+    
+    --color-second: #313131; /* 보조 색상 (VS Code 파란톤 느낌) */
+    --color-second-hover: #464545; /* Hover 시 더 강조된 보라 계열 */
+    
+    --color-third: #F87171; /* 다크 모드에서도 잘 보이는 레드 */
+    --color-third-hover: #DC2626; /* Hover 시 더 강렬한 레드 */
+    
+    --color-active: #0883d4; /* VS Code의 주요 강조 색상 */
+}
+
+body, html {
+    height: 100%; /* 전체 높이 설정 */    
+}
+
+/* Tailwind에서 변수를 활용할 수 있도록 */
+body {
+    background-color: var(--color-background);    
+    color: var(--color-font);
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    text-align: left;
+    visibility: visible;    
+}
+.sidebar {
+    width: 3.5rem; /* Tailwind w-14 (14 * 0.25rem) */    
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem; /* Tailwind py-4 */
+    padding-bottom: 1rem;
+}
   
     
   

@@ -1,7 +1,8 @@
 import Avatar from "@/components/avatar/Avatar";
 import Notification from "@/components/notification/Notification";
 import { FaSignOutAlt } from "react-icons/fa";
-import LanguageSelector from "../common/LanguageSelector";
+import RoundIconButton from "../common/buttons/RoundIconButton";
+import LanguageSelector from "@/language/LanguageSelector";
 // import LogoutButton from "./LogoutButton";
 
 const UtilityBar = () => {
@@ -10,7 +11,8 @@ const UtilityBar = () => {
       };
 
     return (
-        <div className="flex items-center gap-4">        
+        <div className="flex items-center gap-1">  
+                  
             {/* 언어 아이콘 */}
             <LanguageSelector />
             {/* 알림 아이콘 */}
@@ -19,17 +21,11 @@ const UtilityBar = () => {
             <Avatar />
             {/* 로그아웃 버튼 */}
             {/* 로그아웃 버튼 */}
-            <button 
+            <RoundIconButton 
                 onClick={handleLogout} 
-                className="transition-colors duration-300"
-                style={{ 
-                    color: "var(--color-notification-icon)", 
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.color = "var(--color-notification-badge)"}
-                onMouseLeave={(e) => e.currentTarget.style.color = "var(--color-notification-icon)"}
             >
                 <FaSignOutAlt className="text-xl" />
-            </button>
+            </RoundIconButton>
         </div>
     );
 };

@@ -1,11 +1,17 @@
+import { FaUser } from "react-icons/fa";
+import RoundIconButton from "../common/buttons/RoundIconButton";
+
 const Avatar = () => {
+    const handleClick = () => {
+        console.log("아바타 클릭릭!"); // 추후 실제 로그아웃 기능 적용
+      };
     return (
-      <div
-        className="w-8 h-8 rounded-full flex items-center justify-center cursor-pointer"
-        style={{ backgroundColor: "var(--color-avatar-bg)" }}
-      >
-        👤 {/* 기본 아이콘 (추후 이미지 적용 가능) */}
-      </div>
+        <RoundIconButton
+            onClick={handleClick}
+        >            
+            <FaUser className="text-xl" />
+        </RoundIconButton>    
+      
     );
   };
   

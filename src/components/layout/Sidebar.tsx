@@ -13,14 +13,14 @@ const Sidebar = () => {
   const [activeModule, setActiveModule] = useState<string | null>(null);
 
   return (
-    <div className="flex h-full">
-      {/* 모듈 아이콘 사이드바 */}
-      <aside className="w-14 bg-[var(--color-sidebar)] text-[var(--color-text)] flex flex-col items-center py-4">
+    <div className="flex">
+      {/* 모듈 아이콘 사이드바 */}      
+      <aside className="sidebar">
         {modules.map((module) => (
           <button
             key={module.code}
-            className={`w-full flex items-center justify-center py-3 hover:bg-[var(--color-dropdown-hover)] ${
-              activeModule === module.code ? "border-l-4 border-[var(--color-accent)] bg-[var(--color-accent)] text-white" : ""
+            className={`w-full flex items-center justify-center py-3 hover:bg-[var(--color-prime-hover)] ${
+              activeModule === module.code ? "border-l-6 border-[var(--color-second-hover)] text-[var(--color-active)] bg-[var(--color-second)]" : ""
             }`}
             onClick={() => setActiveModule(activeModule === module.code ? null : module.code)}
           >

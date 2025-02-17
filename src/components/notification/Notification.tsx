@@ -1,15 +1,21 @@
 import { FaBell } from "react-icons/fa";
+import RoundIconButton from "../common/buttons/RoundIconButton";
 
 const Notification = () => {
+    const handleClick = () => {
+        console.log("종 클릭!"); // 추후 실제 로그아웃 기능 적용
+      };    
   return (
-    <button className="relative">
-      {/* 🔥 CSS 변수 활용하여 색상 적용 */}
-      <FaBell className="text-xl" style={{ color: "var(--color-notification-icon)" }} />
-      <span
-        className="absolute -top-1 -right-1 w-2 h-2 rounded-full"
-        style={{ backgroundColor: "var(--color-notification-badge)" }}
-      ></span>
-    </button>
+    <RoundIconButton 
+        onClick={handleClick} 
+    >
+        <div className="relative">        
+            <FaBell className="text-xl" />
+            <span   className="absolute -top-1 -right-1 w-2 h-2 rounded-full"
+                    style={{ backgroundColor: "red" }}>
+            </span>        
+        </div>
+    </RoundIconButton>       
   );
 };
 

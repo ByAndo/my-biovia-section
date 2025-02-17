@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/redux/store";
 import { setTheme } from "@/redux/slices/themeSlice";
-import DropDown from "../common/DropDown";
 import { themeOptions } from "@/theme/theme.config";
 import UtilityBar from "./UtilityBar"; // ✅ 추가
+import DropDown from "../common/dropdown/DropDown";
 
 const Header = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   const dispatch = useDispatch();
