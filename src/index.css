@@ -4,6 +4,7 @@
 :root {
     --color-background: #F9FAFB; /* 전체 배경 */
     --color-font: #111827; /* 기본 텍스트 */
+    --color-font-edited: #FF4500; /* 수정된 텍스트 */
 
     --color-prime: #F9FAFB; /* 기본 색상 (버튼, 카드 배경) */
     --color-prime-hover: #D6D6DA; /* Hover 시 강조되는 밝은 회색 */
@@ -14,12 +15,16 @@
     --color-third: #EF4444; /* 강렬한 포인트 색상 (에러, 경고) */
     --color-third-hover: #DC2626; /* Hover 시 더 강조된 레드 */
 
-    --color-active: #bebebe; /* 클릭된 상태에서 강조될 색상 */ 
+    --color-fourth: #3B82F6; /* ✅ 기본 파란색 */
+    --color-fourth-hover: #2563EB; /* ✅ 호버 시 더 진한 파란색 */
+
+    --color-active: #afadad; /* 클릭된 상태에서 강조될 색상 */ 
 }
 
 .dark {
     --color-background: #1E1E1E; /* VS Code 기본 다크 배경 */
     --color-font: #D4D4D4; /* VS Code 스타일 밝은 텍스트 */
+    --color-font-edited: #bba529; /* 수정된 텍스트 */    
     
     --color-prime: #2C2C2C; /* 다크 모드 기본 배경 */
     --color-prime-hover: #3C3C3C; /* Hover 시 강조된 진한 그레이 */
@@ -29,6 +34,9 @@
     
     --color-third: #F87171; /* 다크 모드에서도 잘 보이는 레드 */
     --color-third-hover: #DC2626; /* Hover 시 더 강렬한 레드 */
+    
+    --color-fourth: #3B82F6; /* ✅ 기본 파란색 */
+    --color-fourth-hover: #2563EB; /* ✅ 호버 시 더 진한 파란색 */   
     
     --color-active: #0883d4; /* VS Code의 주요 강조 색상 */
 }

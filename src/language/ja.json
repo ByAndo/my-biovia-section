@@ -1,21 +1,36 @@
 {
     "word": {
-      "home": "ホーム",
-      "experiment": "実験",
-      "dashboard": "ダッシュボード",
-      "settings": "設定",
-      "logout": "ログアウト",
-      "login": "ログイン",
-      "language": "言語",
-      "notebook": "研究ノート",
-      "analytics": "データ分析",
-      "reports": "レポート",
-      "profile": "プロフィール設定",
-      "security": "セキュリティ設定"
+        "home": "ホーム",
+        "experiment": "実験",
+        "dashboard": "ダッシュボード",
+        "settings": "設定",
+        "logout": "ログアウト",
+        "login": "ログイン",
+        "language": "言語",
+        "notebook": "研究ノート",
+        "analytics": "データ分析",
+        "reports": "レポート",
+        "profile": "プロフィール設定",
+        "security": "セキュリティ設定",
+        "sort_asc": "昇順に並べ替え",
+        "sort_desc": "降順に並べ替え",
+        "sort_clear": "並べ替え解除",
+        "export_excel": "Excelにエクスポート",
+        "export_pdf": "PDFにエクスポート",
+        "group_setting": "グループ設定",
+        "group_clear": "グループ解除",
+        "filter_setting": "フィルター設定",
+        "filter_clear": "フィルター解除",
+        "filter" : "フィルター"        
+      
     },
     "message": {
-      "new_message": "新しいメッセージがあります。",
-      "clear_all": "すべて削除"
+        "new_message": "新しいメッセージがあります。",
+        "input_values_message" : "値を入力",        
+        "clear_all": "すべて削除",
+        "use_grid_context_error" : "useGridContextはGridProvider内でのみ使用する必要があります。",
+        "all_update_message" : "すべての変更を適用しますか？",
+        "all_undo_message" : "すべての変更を元に戻しますか？"
     }
   }
   

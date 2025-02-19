@@ -2,9 +2,8 @@ import { JSX, useState } from "react";
 import { Link } from "react-router-dom";
 import { routes } from "../../routers/router.config";
 import { FaBook, FaChartBar, FaCog } from "react-icons/fa";
-import { useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
 import { getTranslation } from "@/language/language.config";
+import useLanguage from "@/hook/useLanguage";
 
 interface SidebarContentProps {
   moduleKey: string;
@@ -17,7 +16,7 @@ const SidebarContent = ({ moduleKey }: SidebarContentProps) => {
   const [isResizing, setIsResizing] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [collapseTrigger, setCollapseTrigger] = useState(false); // 숨김 트리거 상태
-  const language = useSelector((state: RootState) => state.language.language);
+  const language = useLanguage();
 
   const moduleIcons: Record<string, JSX.Element> = {
     settings: <FaCog size={14} className="text-[var(--color-accent)]" />,
@@ -69,9 +68,9 @@ const SidebarContent = ({ moduleKey }: SidebarContentProps) => {
     >
     {!isCollapsed && (
         <div className="bg-[var(--color-second)] text-[var(--color-font)] shadow-md flex-1 p-3">
-            <div className="text-[var(--color-active)] p-1 flex items-center">
+            <div className="text-[var(--color-font)] p-1 flex items-center">
                 {moduleIcons[moduleKey]}
-                <h2 className="text-sm font-medium tracking-wide uppercase text-[var(--color-accent)]">
+                <h2 className="text-sm font-medium tracking-wide uppercase">
                     {getTranslation(language,'word', moduleKey)}                    
                 </h2>
             </div>

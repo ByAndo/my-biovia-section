@@ -20,7 +20,7 @@ const Sidebar = () => {
           <button
             key={module.code}
             className={`w-full flex items-center justify-center py-3 hover:bg-[var(--color-prime-hover)] ${
-              activeModule === module.code ? "border-l-6 border-[var(--color-second-hover)] text-[var(--color-active)] bg-[var(--color-second)]" : ""
+              activeModule === module.code ? "border-l-6 border-[var(--color-second-hover)] text-[var(--color-font)] bg-[var(--color-second)]" : ""
             }`}
             onClick={() => setActiveModule(activeModule === module.code ? null : module.code)}
           >

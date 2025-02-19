@@ -11,11 +11,29 @@
         "analytics": "데이터 분석",
         "reports": "보고서",
         "profile": "프로필 설정",
-        "security": "보안 설정"
+        "security": "보안 설정",
+        "sort_asc": "오름차순 정렬",
+        "sort_desc": "내림차순 정렬",
+        "sort_clear": "정렬 해제",
+        "export_excel": "Excel 내보내기",
+        "export_pdf": "PDF 내보내기",      
+        "group_setting": "그룹 설정",
+        "group_clear": "그룹 해제",
+        "filter_setting": "필터 설정",
+        "filter_clear": "필터터 해제",
+        "filter" : "필터"
     },
     "message": {
         "new_message": "새로운 메시지가 있습니다.",
-        "clear_all": "모두 삭제"
+        "input_values_message" : "값 입력",
+        "clear_all": "모두 삭제",
+        "use_grid_context_error" : "useGridContext는 GridProvider 내에서만 사용해야 합니다.",
+        "all_update_message" : "모든 변경 사항을 적용하시겠습니까?",
+        "all_undo_message" : "모든 변경 사항을 되돌리시겠습니까?"
+    },
+    "errors" : {
+        "E00001" : "🚨 [GridContextMenu] columnId가 null 또는 undefined입니다. 메뉴를 렌더링하지 않습니다.",
+        "E00002" : "🚨 [Export] 데이터 또는 컬럼이 비어 있습니다."
     }
 }
   

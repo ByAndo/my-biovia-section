@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from "@/components/common/Button";
 import Modal from "@/components/common/Modal";
+import Button from "@/components/common/buttons/Button";
 
 const Dashboard = () => {
   const [open, setOpen] = useState(false);

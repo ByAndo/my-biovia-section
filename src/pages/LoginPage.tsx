@@ -1,5 +1,5 @@
+import Button from "@/components/common/buttons/Button";
 import Card from "@/components/common/Card";
-import Button from "@/components/common/Button";
 
 const LoginPage = () => {
   return (
@@ -16,7 +16,7 @@ const LoginPage = () => {
       <Card 
         title="버튼 포함 카드"
         description="버튼이 포함된 카드입니다."
-        actions={<Button variant="primary">더 보기</Button>}
+        actions={<Button>더 보기</Button>}
       />
       <Card 
         title="아웃라인 카드"

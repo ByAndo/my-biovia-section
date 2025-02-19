@@ -1,21 +1,35 @@
 {
     "word": {
-      "home": "Home",
-      "experiment": "Experiment",
-      "dashboard": "Dashboard",
-      "settings": "Settings",
-      "logout": "Logout",
-      "login": "Login",
-      "language": "Language",
-      "notebook": "Notebook",
-      "analytics": "Data Analysis",
-      "reports": "Reports",
-      "profile": "Profile Settings",
-      "security": "Security Settings"
+        "home": "Home",
+        "experiment": "Experiment",
+        "dashboard": "Dashboard",
+        "settings": "Settings",
+        "logout": "Logout",
+        "login": "Login",
+        "language": "Language",
+        "notebook": "Notebook",
+        "analytics": "Data Analysis",
+        "reports": "Reports",
+        "profile": "Profile Settings",
+        "security": "Security Settings",
+        "sort_asc": "Sort Ascending",
+        "sort_desc": "Sort Descending",
+        "sort_clear": "Clear Sorting",
+        "export_excel": "Export to Excel",
+        "export_pdf": "Export to PDF",
+        "group_setting": "Group Setting",
+        "group_clear": "Group Clear",
+        "filter_setting": "Filter Setting",
+        "filter_clear": "Clear Filter",
+        "filter" : "Filter"        
     },
     "message": {
-      "new_message": "You have a new message.",
-      "clear_all": "Clear All"
+        "new_message": "You have a new message.",
+        "input_values_message" : "Input Values",            
+        "clear_all": "Clear All",
+        "use_grid_context_error" : "useGridContext must be used within a GridProvider.",
+        "all_update_message" : "Would you like to apply all changes?",
+        "all_undo_message" : "Would you like to undo all changes?"
     }
   }
   
